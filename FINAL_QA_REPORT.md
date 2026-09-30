@@ -40,3 +40,7 @@ Na primeira rodada E2E, a expectativa nova buscava a expressão literal “pilot
 ### Limites da validação
 
 Esses testes usam navegador e dados de teste. Não verificam avaliação de SUS com pessoas, piloto, formação real, adequação pedagógica ou acessibilidade com o público-alvo. Voz não foi exercitada em todos os navegadores; uso offline pressupõe primeiro carregamento; não há backend nem ensaio de wearable físico. O aviso de tamanho do bundle permanece como oportunidade de otimização.
+
+## Atualização — Sprint 4 (30/09/2026)
+
+`npm install --cache .npm-cache --offline --no-audit --no-fund`, `npm run typecheck`, `npm run build` e `npm run test` passaram; **13 unitários**. A suíte completa `npm run test:e2e` passou com **48 E2E** e **4 roteiros de captura móvel redundantes ignorados**. Os novos testes verificam `/device`, `/device-report`, `/device-presentation`, `/device-poster`, carregamento dos SVGs, aviso conceitual, ausência de transbordo em viewport de 390 px, footer com primeiros nomes ordenados e nomes completos em `/creditos`. A recarga offline de `/device` e do SVG frontal passou em Chromium após cache inicial. O pacote `evidence/sprint-04/` contém 8 PNGs; o índice totaliza 36 caminhos verificados. Build de produção aprovado, com aviso de bundle de 733,38 kB (216,34 kB gzip). Nenhuma medição física do wearable foi realizada.

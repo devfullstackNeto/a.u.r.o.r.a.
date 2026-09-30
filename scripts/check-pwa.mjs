@@ -9,7 +9,13 @@ try{
   await page.goto('http://127.0.0.1:4174/experiencia');
   await page.goto('http://127.0.0.1:4174/privacidade');
   await page.goto('http://127.0.0.1:4174/creditos');
+  await page.goto('http://127.0.0.1:4174/device');
+  await page.locator('img[src="/aurora-device/svg/front.svg"]').waitFor();
   await context.setOffline(true);
+  await page.reload();
+  await page.locator('.device-hero').waitFor();
+  if(!await page.locator('img[src="/aurora-device/svg/front.svg"]').evaluate(img=>img.complete&&img.naturalWidth>0))throw Error('SVG do dispositivo indisponível offline');
+  await page.goto('http://127.0.0.1:4174/creditos');
   await page.reload();
   await page.getByRole('heading',{name:'A.U.R.O.R.A.'}).waitFor();
   await page.goto('http://127.0.0.1:4174/privacidade');
@@ -20,5 +26,5 @@ try{
   await page.getByRole('heading',{name:'Vamos aprender juntas.'}).waitFor();
   await page.getByRole('button',{name:'Letras e sons'}).click();
   await page.getByText(/primeira letra da palavra ÁGUA/).first().waitFor();
-  console.log('PWA offline: créditos, privacidade, experiência e conteúdo disponíveis após recarga.');
+  console.log('PWA offline: dispositivo conceitual, créditos, privacidade, experiência e conteúdo disponíveis após recarga.');
 }finally{await browser.close()}
