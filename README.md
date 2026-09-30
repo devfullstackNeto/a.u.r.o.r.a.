@@ -40,6 +40,10 @@ O PWA registra o service worker na compilação de produção. Visite as página
 
 O roteiro Playwright em `e2e/screenshots.spec.ts` gera 14 capturas em `evidence/screenshots/`, incluindo a página inicial, experiência, dispositivo, SUS, painel e viewport móvel. Veja o [índice de evidências](evidence/EVIDENCE_INDEX.md) antes de reutilizá-las em relatórios. Capturas com dados demonstrativos devem manter o rótulo **DADOS SINTÉTICOS**.
 
+![Página inicial do protótipo digital](evidence/screenshots/01-home.png)
+
+![Painel do projeto com dados sintéticos identificados](evidence/screenshots/11-dashboard.png)
+
 ## Arquitetura
 
 `src/data.ts` contém conteúdo e vocabulário; `src/core.ts` implementa normalização, intents, progressão, SUS e geração sintética; `src/storage.ts` é o adapter IndexedDB; `src/App.tsx` contém os fluxos de interface. `public/sw.js` mantém cache dos assets locais. A interface `PersistenceAdapter` permite adicionar armazenamento remoto no futuro. Detalhes: [decisão do motor local](docs/arquitetura/DECISAO_MOTOR_LOCAL.md).
