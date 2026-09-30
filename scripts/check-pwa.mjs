@@ -7,10 +7,14 @@ try{
   await page.waitForFunction(()=>navigator.serviceWorker.controller!==null,{timeout:10000});
   await page.goto('http://127.0.0.1:4174/projeto');
   await page.goto('http://127.0.0.1:4174/experiencia');
+  await page.goto('http://127.0.0.1:4174/privacidade');
   await context.setOffline(true);
   await page.reload();
+  await page.getByRole('heading',{name:'Seus dados ficam aqui.'}).waitFor();
+  await page.goto('http://127.0.0.1:4174/experiencia');
+  await page.reload();
   await page.getByRole('heading',{name:'Vamos aprender juntas.'}).waitFor();
-  await page.getByRole('button',{name:'Letras',exact:true}).click();
+  await page.getByRole('button',{name:'Letras e sons'}).click();
   await page.getByText(/primeira letra da palavra ÁGUA/).first().waitFor();
-  console.log('PWA offline: experiência e conteúdo disponíveis após recarga.');
+  console.log('PWA offline: privacidade, experiência e conteúdo disponíveis após recarga.');
 }finally{await browser.close()}
