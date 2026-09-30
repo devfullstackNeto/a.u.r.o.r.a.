@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Fluxo de interação conceitual</title><desc id="desc">Usuária, entrada, motor local, módulo pedagógico e saída em sequência.</desc>
+  <rect width="1200" height="360" rx="26" fill="#edf4ef"/><text x="55" y="63" fill="#193d43" font-family="Georgia,serif" font-size="35">Da intenção à resposta</text>
+  <g fill="#fff" stroke="#d6e4dc" stroke-width="2"><rect x="48" y="120" width="188" height="132" rx="17"/><rect x="276" y="120" width="188" height="132" rx="17"/><rect x="504" y="120" width="188" height="132" rx="17"/><rect x="732" y="120" width="188" height="132" rx="17"/><rect x="960" y="120" width="188" height="132" rx="17"/></g>
+  <g fill="#ae7c3c" font-family="Arial,sans-serif" font-size="13" font-weight="bold" letter-spacing="1"><text x="68" y="153">01</text><text x="296" y="153">02</text><text x="524" y="153">03</text><text x="752" y="153">04</text><text x="980" y="153">05</text></g>
+  <g fill="#234950" font-family="Arial,sans-serif" font-size="20" font-weight="bold"><text x="68" y="191">Usuária</text><text x="296" y="191">Botão / voz</text><text x="524" y="191">Motor local</text><text x="752" y="191">Atividade</text><text x="980" y="191">Resposta</text></g>
+  <g fill="#617977" font-family="Arial,sans-serif" font-size="14"><text x="68" y="220">Escolha uma trilha</text><text x="296" y="220">Microfone previsto</text><text x="524" y="220">Regras do software</text><text x="752" y="220">Módulo pedagógico</text><text x="980" y="220">Áudio + vibração</text></g>
+  <g fill="#a8783c" font-family="Arial,sans-serif" font-size="25"><text x="244" y="199">→</text><text x="472" y="199">→</text><text x="700" y="199">→</text><text x="928" y="199">→</text></g>
+  <text x="600" y="313" text-anchor="middle" fill="#496863" font-family="Arial,sans-serif" font-size="15">Fluxo conceitual do wearable · no aplicativo atual, entrada e saída ocorrem no navegador.</text>
+</svg>
