@@ -18,3 +18,7 @@ Busca em 30/09/2026 em README, CHANGELOG, QA, `docs/`, `src/` e índice de evid�
 Os relatórios das Metas 1, 2 e 5 agora identificam a origem do vocabulário, limitam a validação ao software e separam roteiro/artigo-base de divulgação efetiva. Os relatórios das Metas 3 e 4 declaram a ausência de piloto e formação reais. `/projeto`, `/creditos`, README e matrizes repetem esses limites. A varredura contextual não encontrou alegação positiva sem suporte nas expressões pesquisadas. Revisão humana permanece necessária antes de submissão institucional, sobretudo para registros futuros.
 
 **Não comprovados nesta fase:** atendimentos, entrevistas, participantes, aplicação real de SUS, mentora formada, teste de hardware, artigo submetido, vídeo publicado, impacto social ou eficácia pedagógica. Dados sintéticos e automação são identificados.
+
+## Revisão complementar — Sprint 4
+
+Foram pesquisadas em `src/`, `docs/`, `public/` e `README.md` as expressões “hardware produzido”, “pulseira construída”, “protótipo físico”, “testado fisicamente” e “wearable validado”. As ocorrências de hardware físico aparecem como negação, hipótese ou plano futuro. Os SVGs contêm rótulos “design conceitual” e “não fabricado”; `/device` e as três peças de comunicação repetem o aviso de hardware não produzido. `docs/sprint-04/02_REQUISITOS_FISICOS_CONCEITUAIS.md` classifica números como requisitos ou metas, não medições. Nenhuma alegação positiva de fabricação ou ensaio físico foi mantida.

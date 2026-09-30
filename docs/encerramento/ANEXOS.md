@@ -16,5 +16,7 @@ Os caminhos abaixo são arquivos ou diretórios do repositório. Selecionar arqu
 | J — Créditos | Equipe e vínculos documentados | Página `/creditos`; `src/team.ts`; `02_MATRIZ_METAS_EVIDENCIAS.md` |
 | K — Git e histórico | Histórico local e mudanças | `CHANGELOG.md`; comandos `git log` e `git status` no momento da entrega |
 | L — Plano de continuidade | Próximas etapas | `docs/05-meta-05-disseminacao/07_PLANO_CONTINUIDADE.md`, `LIMITACOES_E_TRABALHOS_FUTUROS.md` |
+| M — Conceito do wearable | SVGs editáveis, requisitos, fluxo e plano físico futuro | `public/aurora-device/svg/`, `docs/sprint-04/` |
+| N — Capturas conceituais | Oito evidências de interface e materiais digitais | `evidence/sprint-04/` |
 
 Capturas de tela comprovam interface do software. Fotos de ação com pessoas, recibos de publicação e resultados de piloto exigem anexos futuros autênticos.

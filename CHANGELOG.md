@@ -1,5 +1,14 @@
 # Histórico de implementação
 
+## 2026-09-30 — Sprint 4
+
+- Ordenados os créditos por primeiro nome; footer usa apenas Emanuelli, Jenniffer, Juliana, Maria Isabel, Nathalia e Thayanne em composição discreta e responsiva.
+- Criados seis SVGs editáveis do conceito de wearable, com vistas, componentes, fluxo, arquitetura e estados.
+- Ampliada `/device`, preservando o demonstrador digital; adicionadas páginas de relatório, apresentação 16:9 e pôster.
+- Documentados requisitos conceituais, cenários, legendas, plano de prototipagem futura e limites de evidência; oito capturas Playwright indexadas.
+- Atualizado cache PWA; QA da Sprint 4 em `FINAL_QA_REPORT.md`.
+
+
 ## 2026-09-30 — Sprint 3.1
 
 - Adicionadas `/creditos`, equipe oficial, responsabilidades documentadas e rodapé institucional.

@@ -4,7 +4,7 @@
 
 ## 1. Identificação
 
-**Projeto:** A.U.R.O.R.A. — Unidade Autônoma para Reforço Oral Regional e Assistência. **Produto desta fase:** Protótipo Funcional Digital para Alfabetização, Cidadania e Inclusão. **Instituição:** Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso — IFMT, Campus Várzea Grande. **Coordenação:** Prof. Carlos Gracioli Neto. **Equipe discente:** Jenniffer Karla da Silva Araujo; Emanuelli Prado Sales; Juliana Silva de Jesus; Maria Isabel Borba Dranka; Nathalia de Souza Leite; Thayanne Melgueiro da Silva Bezerra Pinheiro. Responsabilidades constam da matriz de metas, sem atribuição específica a Maria Isabel.
+**Projeto:** A.U.R.O.R.A. — Unidade Autônoma para Reforço Oral Regional e Assistência. **Produto desta fase:** Protótipo Funcional Digital para Alfabetização, Cidadania e Inclusão. **Instituição:** Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso — IFMT, Campus Várzea Grande. **Coordenação:** Prof. Carlos Gracioli Neto. **Equipe discente:** Emanuelli Prado Sales; Jenniffer Karla da Silva Araujo; Juliana Silva de Jesus; Maria Isabel Borba Dranka; Nathalia de Souza Leite; Thayanne Melgueiro da Silva Bezerra Pinheiro. Responsabilidades constam da matriz de metas, sem atribuição específica a Maria Isabel.
 
 ## 2. Resumo
 
@@ -51,6 +51,10 @@ Há rotas navegáveis, dez trilhas, fluxo de consentimento, retomada de sessão,
 Protótipo funcional digital instalável como PWA, com documentação, testes automatizados, capturas e materiais-base de extensão. A página `/creditos` registra a equipe oficial. A representação da pulseira é conceitual.
 
 ## 13. Limitações
+
+### Materialização Conceitual do Dispositivo Vestível
+
+A Sprint 4 acrescentou um design vetorial editável para a futura pulseira: vista frontal e lateral, mapa de componentes, fluxo de interação, divisão entre software atual e hardware futuro e estados de operação. As rotas `/device`, `/device-report`, `/device-presentation` e `/device-poster` apresentam o conceito para exploração, relatório e comunicação. O desenho prevê corpo arredondado, botão principal, microfone, áudio, LED, vibração, bateria e processamento embarcado. O motor pedagógico e as trilhas funcionam hoje no navegador; não houve portabilidade para firmware, seleção de componentes, aquisição, montagem nem ensaio físico. Dimensões e autonomia descritas na Sprint 4 são requisitos conceituais ou metas futuras. A implementação física continua condicionada ao plano em `docs/sprint-04/08_PLANO_PROTOTIPAGEM_FISICA_FUTURA.md`.
 
 Wearable físico inexistente nesta fase; nenhum backend central; dados locais ao navegador; piloto e formação real não realizados; voz variável entre navegadores; acessibilidade e conteúdo dependem de validação com o público; ausência de estudo longitudinal. Ver `LIMITACOES_E_TRABALHOS_FUTUROS.md`.
 

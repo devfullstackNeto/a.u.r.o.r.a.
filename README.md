@@ -53,6 +53,14 @@ O pacote final da Sprint 3.1 reúne 15 capturas em `evidence/final/`, incluindo 
 
 `src/data.ts` contém conteúdo e vocabulário; `src/core.ts` implementa normalização, intents, progressão, SUS e geração sintética; `src/storage.ts` define o `StorageAdapter` IndexedDB v2; `src/analytics.ts` e `src/export.ts` calculam indicadores e arquivos. `Experience`, `Pilot`, `Mentor`, `Dashboard` e `Privacy` mantêm os fluxos de interface. `public/sw.js` mantém cache dos assets locais. Um adapter remoto pode ser implementado futuramente; nenhum backend existe nesta versão. Detalhes: [decisão do motor local](docs/arquitetura/DECISAO_MOTOR_LOCAL.md), [privacidade](docs/arquitetura/PRIVACIDADE_E_DADOS.md) e [exportações](docs/arquitetura/FORMATO_EXPORTACAO.md).
 
+## Conceito do Dispositivo Vestível
+
+O projeto original prevê futura implementação física do A.U.R.O.R.A. Nesta fase foi desenvolvido e testado o **protótipo funcional digital**. As representações visuais da rota `/device` mostram como a camada lógica e pedagógica poderia ser materializada em hardware em etapa posterior. São **designs conceituais**, não fotografias ou testes de uma pulseira fabricada.
+
+Os [SVGs editáveis](public/aurora-device/svg/) apresentam vistas frontal e lateral, componentes, fluxo, arquitetura e estados. O [conceito físico](docs/sprint-04/01_CONCEITO_DISPOSITIVO.md), os [requisitos conceituais](docs/sprint-04/02_REQUISITOS_FISICOS_CONCEITUAIS.md) e o [plano de prototipagem futura](docs/sprint-04/08_PLANO_PROTOTIPAGEM_FISICA_FUTURA.md) explicam hipóteses e verificações pendentes. Há versões nas rotas `/device-report`, `/device-presentation` e `/device-poster` para relatório, apresentação e pôster.
+
+![Vista frontal conceitual da pulseira](public/aurora-device/svg/front.svg)
+
 ## Testes
 
 ```bash
@@ -73,6 +81,8 @@ Nenhum nome ou CPF é solicitado. Dados inseridos no piloto desta versão ficam 
 
 `docs/` organiza as cinco metas, arquitetura, requisitos, QA, evidências, encerramento e a [Sprint 2.1](docs/sprint-02-1/RELATORIO_SPRINT_02_1.md). `evidence/` guarda capturas e artefatos verificados. A [matriz de rastreabilidade](docs/encerramento/01_MATRIZ_RASTREABILIDADE.md) liga objetivo, requisito, função, teste e evidência. [SPRINT_STATUS.md](docs/SPRINT_STATUS.md) descreve o estado das entregas.
 
+A [Sprint 4](docs/sprint-04/07_RELATORIO_SPRINT_04.md) documenta a materialização visual conceitual do wearable e suas capturas em `evidence/sprint-04/`. Essas peças não alteram o status do hardware físico.
+
 A [matriz de metas e evidências](docs/encerramento/02_MATRIZ_METAS_EVIDENCIAS.md) distingue implementação, preparação e atividades não executadas. O [relatório final base](docs/encerramento/RELATORIO_FINAL_AURORA_BASE.md), a [conclusão](docs/encerramento/CONCLUSAO_PROJETO.md), o [guia SUAP](docs/encerramento/GUIA_PREENCHIMENTO_SUAP.md), os [anexos](docs/encerramento/ANEXOS.md) e a [auditoria de alegações](docs/encerramento/CLAIMS_AUDIT.md) compõem o pacote de encerramento técnico.
 
 ## Limitações e próximos passos
@@ -83,7 +93,7 @@ O conteúdo pedagógico requer revisão com a comunidade. Não há teste com par
 
 **Coordenação:** Prof. Carlos Gracioli Neto.
 
-**Equipe discente:** Jenniffer Karla da Silva Araujo; Emanuelli Prado Sales; Juliana Silva de Jesus; Maria Isabel Borba Dranka; Nathalia de Souza Leite; Thayanne Melgueiro da Silva Bezerra Pinheiro.
+**Equipe discente:** Emanuelli Prado Sales; Jenniffer Karla da Silva Araujo; Juliana Silva de Jesus; Maria Isabel Borba Dranka; Nathalia de Souza Leite; Thayanne Melgueiro da Silva Bezerra Pinheiro.
 
 Responsabilidades documentadas: Jenniffer — Metas 1 e 4; Juliana — Meta 2; Nathalia — Meta 3; Emanuelli — atividade de relatório técnico na Meta 5; Thayanne — atividade de vídeo demonstrativo/artigo na Meta 5. Maria Isabel integra a equipe, sem atribuição de atividade específica na documentação disponível. A página `/creditos` apresenta a equipe e o estado do produto. Essas vinculações não são prova de execução individual de atividades de campo ou divulgação externa.
 

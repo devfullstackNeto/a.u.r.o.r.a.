@@ -32,5 +32,13 @@ Data de referência: 30/09/2026. **Origem** identifica documento de desenvolvime
 | AUR-FIN-13 | 2/3 | Privacidade | Captura | Dados e exclusão local | `evidence/final/13-privacidade.png` | Playwright Sprint 3.1 | Verificado | Sem backend |
 | AUR-FIN-14 | 5 | Créditos | Captura | Equipe e responsabilidades | `evidence/final/14-creditos.png` | Playwright Sprint 3.1 | Verificado | Atribuição documental |
 | AUR-FIN-15 | 5 | Responsividade | Captura | Créditos em 390 px | `evidence/final/15-mobile.png` | Playwright Sprint 3.1 | Verificado | Viewport móvel |
+| AUR-S04-01 | 2/5 | Conceito visual | Captura | Página `/device` com design e demonstrador | `evidence/sprint-04/01-device-concept.png` | Playwright Sprint 4 | Verificado | Ilustração, não hardware físico |
+| AUR-S04-02 | 2/5 | Componentes | Captura | Mapa de funções previstas | `evidence/sprint-04/02-device-components.png` | Playwright Sprint 4 | Verificado | Peças não adquiridas |
+| AUR-S04-03 | 2/5 | Fluxo | Captura | Usuária a resposta | `evidence/sprint-04/03-device-flow.png` | Playwright Sprint 4 | Verificado | Fluxo conceitual |
+| AUR-S04-04 | 2/5 | Estados | Captura | Sete estados propostos | `evidence/sprint-04/04-device-states.png` | Playwright Sprint 4 | Verificado | LED e vibração não testados |
+| AUR-S04-05 | 5 | Relatório | Captura | Prancha para relatório | `evidence/sprint-04/05-device-report.png` | Playwright Sprint 4 | Verificado | Peça digital para impressão |
+| AUR-S04-06 | 5 | Apresentação | Captura | Material 16:9 | `evidence/sprint-04/06-device-presentation.png` | Playwright Sprint 4 | Verificado | Peça digital |
+| AUR-S04-07 | 5 | Pôster | Captura | Material vertical | `evidence/sprint-04/07-device-poster.png` | Playwright Sprint 4 | Verificado | Peça digital |
+| AUR-S04-08 | 2/5 | Responsividade | Captura | Conceito em 390 px | `evidence/sprint-04/08-device-mobile.png` | Playwright Sprint 4 | Verificado | Viewport móvel |
 
 Arquivos complementares da Sprint 2.1 e do primeiro conjunto visual permanecem em seus diretórios. Não usar as capturas como substitutas de fotos reais ou de ata de atividade.
