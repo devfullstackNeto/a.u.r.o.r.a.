@@ -1,5 +1,12 @@
 # Histórico de implementação
 
+## 2026-09-30 — Sprint 2.1
+
+- Fluxo de piloto com etapas persistidas, recuperação após recarga, código anônimo copiável e consentimento ampliado.
+- Dez trilhas diretamente selecionáveis; feedback de quatro notas separado do SUS.
+- IndexedDB v2, verificação de colisão, métricas ampliadas, exportações CSV/JSON e página de privacidade.
+- Formação da mentora navegável, checklists, testes adicionais e 12 capturas específicas.
+
 ## 2026-09-30 — Sprint 1
 
 - Inicialização React/Vite/TypeScript e PWA.

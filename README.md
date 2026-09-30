@@ -29,10 +29,11 @@ O PWA registra o service worker na compilação de produção. Visite as página
 - Dez trilhas com atividades estruturadas, resposta e feedback.
 - Motor determinístico local de intents e regras; **não há LLM** nesta versão.
 - Entrada por texto ou reconhecimento de voz quando disponível; saída falada por SpeechSynthesis quando disponível.
-- Sessões anônimas com código `AUR-XXXXXX`, guardadas em IndexedDB.
-- Fluxo de piloto local com consentimento, tutorial, experiência, feedback e SUS opcional.
-- Área da Mentora com guia, formação demonstrativa, vocabulário inicial de desenvolvimento e sessões locais.
-- Painel com métricas calculadas dos registros armazenados e filtros `TODOS`, `REAIS`, `SINTÉTICOS`.
+- Sessões anônimas com código `AUR-XXXXXX`, ID interno distinto, verificação de colisão e armazenamento IndexedDB versionado.
+- Fluxo de piloto local com consentimento, código copiável, retomada após recarga, feedback de quatro notas e SUS opcional em etapa separada.
+- Área da Mentora com guia, sete módulos navegáveis, checklists, materiais e sessões locais.
+- Painel com métricas calculadas, filtros `TODOS`, `REAIS`, `SINTÉTICOS` e exportação CSV/JSON identificada por origem.
+- Página `/privacidade` com explicação, exportação e exclusão seletiva local.
 - 25 sessões **sintéticas** geráveis e removíveis sem apagar registros locais de piloto.
 - Diagnóstico de recursos do navegador e simulação conceitual do dispositivo.
 
@@ -40,13 +41,15 @@ O PWA registra o service worker na compilação de produção. Visite as página
 
 O roteiro Playwright em `e2e/screenshots.spec.ts` gera 14 capturas em `evidence/screenshots/`, incluindo a página inicial, experiência, dispositivo, SUS, painel e viewport móvel. Veja o [índice de evidências](evidence/EVIDENCE_INDEX.md) antes de reutilizá-las em relatórios. Capturas com dados demonstrativos devem manter o rótulo **DADOS SINTÉTICOS**.
 
+As 12 capturas específicas da Sprint 2.1 ficam em `evidence/sprint-02-1/` e mostram consentimento, código, feedback, SUS, painel sintético, filtro REAL vazio, mentoria e privacidade.
+
 ![Página inicial do protótipo digital](evidence/screenshots/01-home.png)
 
 ![Painel do projeto com dados sintéticos identificados](evidence/screenshots/11-dashboard.png)
 
 ## Arquitetura
 
-`src/data.ts` contém conteúdo e vocabulário; `src/core.ts` implementa normalização, intents, progressão, SUS e geração sintética; `src/storage.ts` é o adapter IndexedDB; `src/App.tsx` contém os fluxos de interface. `public/sw.js` mantém cache dos assets locais. A interface `PersistenceAdapter` permite adicionar armazenamento remoto no futuro. Detalhes: [decisão do motor local](docs/arquitetura/DECISAO_MOTOR_LOCAL.md).
+`src/data.ts` contém conteúdo e vocabulário; `src/core.ts` implementa normalização, intents, progressão, SUS e geração sintética; `src/storage.ts` define o `StorageAdapter` IndexedDB v2; `src/analytics.ts` e `src/export.ts` calculam indicadores e arquivos. `Experience`, `Pilot`, `Mentor`, `Dashboard` e `Privacy` mantêm os fluxos de interface. `public/sw.js` mantém cache dos assets locais. Um adapter remoto pode ser implementado futuramente; nenhum backend existe nesta versão. Detalhes: [decisão do motor local](docs/arquitetura/DECISAO_MOTOR_LOCAL.md), [privacidade](docs/arquitetura/PRIVACIDADE_E_DADOS.md) e [exportações](docs/arquitetura/FORMATO_EXPORTACAO.md).
 
 ## Testes
 
@@ -66,7 +69,7 @@ Nenhum nome ou CPF é solicitado. Dados inseridos no piloto desta versão ficam 
 
 ## Estrutura e documentação
 
-`docs/` organiza as cinco metas, arquitetura, requisitos, QA, evidências e encerramento. `evidence/` guarda capturas e artefatos verificados. A [matriz de rastreabilidade](docs/encerramento/01_MATRIZ_RASTREABILIDADE.md) liga objetivo, requisito, função, teste e evidência. [SPRINT_STATUS.md](docs/SPRINT_STATUS.md) descreve o estado das três sprints.
+`docs/` organiza as cinco metas, arquitetura, requisitos, QA, evidências, encerramento e a [Sprint 2.1](docs/sprint-02-1/RELATORIO_SPRINT_02_1.md). `evidence/` guarda capturas e artefatos verificados. A [matriz de rastreabilidade](docs/encerramento/01_MATRIZ_RASTREABILIDADE.md) liga objetivo, requisito, função, teste e evidência. [SPRINT_STATUS.md](docs/SPRINT_STATUS.md) descreve o estado das entregas.
 
 ## Limitações e próximos passos
 
