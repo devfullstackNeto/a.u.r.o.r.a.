@@ -1,0 +1,20 @@
+import {test,type Page} from '@playwright/test';
+test.skip(({isMobile})=>isMobile,'O roteiro gera uma captura móvel ao final da execução desktop.');
+const shot=(page:Page,name:string)=>page.screenshot({path:`evidence/final/${name}.png`,fullPage:true});
+test('pacote visual final do protótipo',async({page})=>{
+  test.setTimeout(120000);
+  await page.goto('/');await shot(page,'01-home');
+  await page.goto('/projeto');await shot(page,'02-projeto');
+  await page.goto('/participar');await shot(page,'03-participar');
+  await page.getByRole('button',{name:'Continuar',exact:true}).click();await page.getByRole('button',{name:/Ver consentimento/}).click();await shot(page,'04-consentimento');
+  await page.getByRole('checkbox',{name:/Li e concordo/}).check();await page.getByRole('button',{name:/Concordar e gerar/}).click();await page.getByRole('button',{name:/Continuar ao tutorial/}).click();await page.getByRole('button',{name:/Começar/}).click();await shot(page,'05-experiencia');
+  await page.goto('/device');await shot(page,'06-device');
+  await page.goto('/experiencia');await shot(page,'07-trilhas');
+  await page.goto('/participar');await page.getByRole('button',{name:/Concluir sessão/}).click();await shot(page,'08-feedback');
+  for(const name of ['overall','ease','clarity','usefulness'])await page.locator(`input[name="feedback-${name}"]`).nth(3).check();await page.getByRole('button',{name:/Salvar feedback/}).click();await page.getByRole('checkbox',{name:/Quero responder ao SUS/}).check();await shot(page,'09-sus');
+  await page.goto('/dashboard');await page.getByRole('button',{name:/Gerar dados demonstrativos/}).click();await page.getByRole('button',{name:'SINTÉTICOS'}).click();await shot(page,'10-dashboard');
+  await page.goto('/mentora');await shot(page,'11-mentora');await page.getByRole('tab',{name:'Formação'}).click();await shot(page,'12-formacao');
+  await page.goto('/privacidade');await shot(page,'13-privacidade');
+  await page.goto('/creditos');await shot(page,'14-creditos');
+  await page.setViewportSize({width:390,height:844});await page.goto('/creditos');await shot(page,'15-mobile');
+});
