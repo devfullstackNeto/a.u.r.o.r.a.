@@ -1,15 +1,17 @@
-# Matriz de rastreabilidade
+# Matriz mestre de rastreabilidade
 
-> **Estado documental:** protótipo funcional digital. A pulseira física não foi construída nem testada. Dados da demonstração são sintéticos; registros de piloto nesta versão permanecem apenas no navegador e não constituem, por si, avaliação institucional realizada.
+Estado em 30/09/2026. Resultados são técnicos; captura e teste não comprovam atividade com participantes. RF/RNF constam dos requisitos da Meta 1. IDs resolvem em `evidence/EVIDENCE_INDEX.md`.
 
-| Objetivo | Meta | Atividade | Requisito | Funcionalidade | Teste | Resultado | Evidência | Documento |
-|---|---|---|---|---|---|---|---|---|
-| Interação local | 2 | Motor | RF01–RF04 | `src/core.ts` | `src/core.test.ts` | Ver QA | QA_REPORT | Meta 2/03 |
-| Sessões | 2/3 | Registro | RF05 | `src/storage.ts` | E2E fluxo | Ver QA | QA_REPORT | Meta 3/01 |
-| SUS | 3 | Avaliação | RF07 | `calculateSUS` | Unitário/E2E | Ver QA | QA_REPORT | Meta 3/05 |
-| Mentoria | 4 | Apoio | RF10 | `/mentora` | E2E navegação | Ver QA | QA_REPORT | Meta 4/02 |
-| Indicadores | 5 | Sistematização | RF08–RF09 | `/dashboard` | E2E navegação | Ver QA | QA_REPORT | Meta 5/02 |
-| Consentimento e retomada | 3 | Preparação do piloto | RF05 | `/participar`, `src/Pilot.tsx` | E2E-01, 08, 13 | Ver Sprint 2.1 | AUR-M3-EV-002/003 | Termo modelo e Sprint 2.1 |
-| Segregação de dados | 3 | Dados | RF09 | `src/storage.ts`, `/dashboard` | E2E-04 a 06 | Ver Sprint 2.1 | AUR-M3-EV-005 | Privacidade e dados |
-| Exportação | 3/5 | Sistematização | RF08 | `src/export.ts` | E2E-10 e teste unitário | Ver Sprint 2.1 | RESULTADOS_TESTES | Formato de exportação |
-| Privacidade | 3 | Preparação do piloto | RNF05 | `/privacidade` | E2E de rotas e captura | Ver Sprint 2.1 | AUR-M2-EV-004 | Privacidade e dados |
+| Objetivo | Meta | Atividade | Requisito | Funcionalidade | Arquivo/código | Teste | Resultado | Evidência | Documento |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Definir experiência pedagógica | 1 | Pesquisa e design | RF01–RF04 | Vocabulário inicial e dez trilhas | `src/data.ts`, `src/Experience.tsx` | `src/core.test.ts`; E2E experiência | Fluxos digitais testados; sem coleta real | AUR-M1-EV-001; AUR-FIN-07 | `docs/01-meta-01-pesquisa-design/09_RELATORIO_META_01.md` |
+| Apoiar interação local | 2 | Motor | RF01–RF04 | Regras, voz opcional e texto | `src/core.ts`, `src/Experience.tsx` | `src/core.test.ts`; E2E interação | Validado tecnicamente | AUR-M2-EV-001; AUR-FIN-05 | `docs/02-meta-02-prototipo-testes/10_RELATORIO_META_02.md` |
+| Manter uso offline | 2 | PWA | RNF disponibilidade | Cache após primeiro carregamento | `vite.config.ts`, `scripts/check-pwa.mjs` | Build; verificação PWA | Offline técnico verificado | AUR-M2-EV-001; AUR-FIN-13 | `docs/02-meta-02-prototipo-testes/07_TESTE_OFFLINE.md` |
+| Guardar sessões com minimização | 2/3 | Persistência | RF05; RNF05 | IndexedDB, código, exclusão | `src/storage.ts`, `src/Pilot.tsx`, `src/Privacy.tsx` | `src/sprint21.test.ts`; E2E-01/08/13 | Técnica testada; sem participante real | AUR-M3-EV-002/003; AUR-FIN-03/04/13 | `docs/arquitetura/PRIVACIDADE_E_DADOS.md` |
+| Preparar participação | 3 | Consentimento e retomada | RF05 | `/participar` | `src/Pilot.tsx` | E2E-01/08/13 | Pronto para piloto; aplicação pendente | AUR-M3-EV-002/003; AUR-FIN-03/04 | `docs/03-meta-03-piloto/RELATORIO_META_03_PREPARACAO.md` |
+| Preparar avaliação | 3 | Feedback e SUS | RF07 | Formulários distintos e cálculo | `src/Pilot.tsx`, `src/analytics.ts` | Unitários; E2E feedback/SUS | Interação automatizada; sem SUS real | AUR-M3-EV-004; AUR-FIN-08/09 | `docs/03-meta-03-piloto/05_QUESTIONARIO_SUS.md` |
+| Sistematizar dados | 3/5 | Painel e exportações | RF08–RF09 | Filtros real/sintético, CSV/JSON | `src/Dashboard.tsx`, `src/export.ts` | Unitário exportação; E2E-04/06/10 | Demonstração sintética separada | AUR-M3-EV-005; AUR-FIN-10 | `docs/arquitetura/FORMATO_EXPORTACAO.md` |
+| Preparar mentoria | 4 | Formação digital | RF10 | Sete módulos e checklists | `src/Mentor.tsx` | E2E mentoria/formação | Ambiente implementado; formação real pendente | AUR-M4-EV-001/002; AUR-FIN-11/12 | `docs/04-meta-04-mentoria/RELATORIO_META_04_PREPARACAO.md` |
+| Comunicar produto e autoria | 5 | Documentação | Registro institucional | `/projeto`, `/creditos`, README | `src/App.tsx`, `src/Credits.tsx`, `src/team.ts` | E2E créditos e capturas | Documentado; publicação externa não comprovada | AUR-FIN-02/14 | `docs/05-meta-05-disseminacao/08_RELATORIO_META_05.md` |
+
+`FINAL_QA_REPORT.md` registra a execução final. Atividades de campo das Metas 3 e 4 permanecem preparadas para execução real; o wearable físico é trabalho futuro.

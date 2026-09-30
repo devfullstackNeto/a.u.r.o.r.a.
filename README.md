@@ -43,6 +43,8 @@ O roteiro Playwright em `e2e/screenshots.spec.ts` gera 14 capturas em `evidence/
 
 As 12 capturas específicas da Sprint 2.1 ficam em `evidence/sprint-02-1/` e mostram consentimento, código, feedback, SUS, painel sintético, filtro REAL vazio, mentoria e privacidade.
 
+O pacote final da Sprint 3.1 reúne 15 capturas em `evidence/final/`, incluindo `/projeto`, `/creditos` e uma viewport móvel. Elas são registros técnicos produzidos por Playwright, não fotografias de campo.
+
 ![Página inicial do protótipo digital](evidence/screenshots/01-home.png)
 
 ![Painel do projeto com dados sintéticos identificados](evidence/screenshots/11-dashboard.png)
@@ -71,10 +73,20 @@ Nenhum nome ou CPF é solicitado. Dados inseridos no piloto desta versão ficam 
 
 `docs/` organiza as cinco metas, arquitetura, requisitos, QA, evidências, encerramento e a [Sprint 2.1](docs/sprint-02-1/RELATORIO_SPRINT_02_1.md). `evidence/` guarda capturas e artefatos verificados. A [matriz de rastreabilidade](docs/encerramento/01_MATRIZ_RASTREABILIDADE.md) liga objetivo, requisito, função, teste e evidência. [SPRINT_STATUS.md](docs/SPRINT_STATUS.md) descreve o estado das entregas.
 
+A [matriz de metas e evidências](docs/encerramento/02_MATRIZ_METAS_EVIDENCIAS.md) distingue implementação, preparação e atividades não executadas. O [relatório final base](docs/encerramento/RELATORIO_FINAL_AURORA_BASE.md), a [conclusão](docs/encerramento/CONCLUSAO_PROJETO.md), o [guia SUAP](docs/encerramento/GUIA_PREENCHIMENTO_SUAP.md), os [anexos](docs/encerramento/ANEXOS.md) e a [auditoria de alegações](docs/encerramento/CLAIMS_AUDIT.md) compõem o pacote de encerramento técnico.
+
 ## Limitações e próximos passos
 
 O conteúdo pedagógico requer revisão com a comunidade. Não há teste com participantes ou avaliação de eficácia pedagógica nesta entrega. Reconhecimento de voz e saída falada variam entre navegadores. Futuras etapas: protocolo de piloto, formação institucional da mentora, validação acessível, governança de dados remotos e eventual construção da pulseira física.
 
-## Equipe e licença
+## Equipe e créditos
 
-Coordenação: **Prof. Carlos Gracioli Neto**. Desenvolvimento: **Equipe A.U.R.O.R.A. — IFMT Campus Várzea Grande**. A definição de licença de distribuição permanece pendente de decisão institucional; nenhum direito de uso externo é presumido.
+**Coordenação:** Prof. Carlos Gracioli Neto.
+
+**Equipe discente:** Jenniffer Karla da Silva Araujo; Emanuelli Prado Sales; Juliana Silva de Jesus; Maria Isabel Borba Dranka; Nathalia de Souza Leite; Thayanne Melgueiro da Silva Bezerra Pinheiro.
+
+Responsabilidades documentadas: Jenniffer — Metas 1 e 4; Juliana — Meta 2; Nathalia — Meta 3; Emanuelli — atividade de relatório técnico na Meta 5; Thayanne — atividade de vídeo demonstrativo/artigo na Meta 5. Maria Isabel integra a equipe, sem atribuição de atividade específica na documentação disponível. A página `/creditos` apresenta a equipe e o estado do produto. Essas vinculações não são prova de execução individual de atividades de campo ou divulgação externa.
+
+## Licença
+
+A definição de licença de distribuição permanece pendente de decisão institucional; nenhum direito de uso externo é presumido.
